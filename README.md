@@ -1,242 +1,233 @@
 # Professional Dashboard
 
-একটি সম্পূর্ণ পেশাদার ড্যাশবোর্ড যা শুধুমাত্র Tailwind CSS এবং React/Next.js ব্যবহার করে তৈরি। এটি যেকোনো React বা Next.js প্রজেক্টে সহজেই ইমপ্লিমেন্ট করা যায়।
+A complete professional dashboard built using **only Tailwind CSS** and **React/Next.js**. It can be easily integrated into any React or Next.js project.
 
-## ✨ বৈশিষ্ট্য
+## ✨ Features
 
-### 🎨 ডিজাইন ও UI
-- **সম্পূর্ণ রেসপন্সিভ** - মোবাইল, ট্যাবলেট এবং ডেস্কটপে নিখুঁত
-- **ডার্ক/লাইট/সিস্টেম মোড** - থিম সুইচার সহ
-- **পেশাদার ডিজাইন** - আধুনিক এবং পরিষ্কার UI
-- **শুধুমাত্র Tailwind CSS** - কোনো UI লাইব্রেরি নেই
+### 🎨 Design & UI
+- **Fully responsive** for mobile, tablet, and desktop
+- **Light/Dark/System themes** with a theme switcher
+- **Professional design** with a modern and clean interface
+- **100% Tailwind CSS** – no external UI libraries
 
-### 🔐 অথেন্টিকেশন
-- **লগইন সিস্টেম** - ইমেইল এবং পাসওয়ার্ড সহ
-- **ফরগট পাসওয়ার্ড ফ্লো** - OTP ভেরিফিকেশন সহ
-- **OTP কম্পোনেন্ট** - সব ডিভাইসে পেস্ট সাপোর্ট সহ
+### 🔐 Authentication
+- **Login system** with email and password
+- **Forgot password flow** with OTP verification
+- **Reusable OTP input component** with paste support across devices
 
-### 📊 ড্যাশবোর্ড ফিচার
-- **সাইডবার নেভিগেশন** - কোলাপ্স/এক্সপান্ড সিস্টেম
-- **রেসপন্সিভ হেডার** - ইউজার প্রোফাইল ড্রপডাউন সহ
-- **মোবাইল মেনু** - ব্লার ব্যাকগ্রাউন্ড সহ
-- **ডেটা টেবিল** - সার্চ এবং পেজিনেশন সহ
+### 📊 Dashboard Features
+- **Sidebar navigation** with collapse/expand support
+- **Responsive header** with user profile dropdown
+- **Mobile menu** with blur background
+- **Data table** with search and pagination
 
-### 🔍 সার্চ ও পেজিনেশন
-- **URL-বেসড সার্চ** - সার্ভার-সাইড পেজিনেশন সাপোর্ট
-- **রিইউজেবল পেজিনেশন কম্পোনেন্ট** - সব পেজে ব্যবহারযোগ্য
-- **ডেবাউন্স সার্চ** - পারফরম্যান্স অপটিমাইজড
+### 🔍 Search & Pagination
+- **URL-based search** for server-side pagination
+- **Reusable pagination component** for multiple pages
+- **Debounced search** for better performance
 
-### 👥 রোল-বেসড এক্সেস
-- **Admin, Manager, User রোল** - কাস্টমাইজেবল
-- **পারমিশন সিস্টেম** - প্রতিটি রোলের জন্য আলাদা এক্সেস
-- **প্রোটেক্টেড রুট** - অননুমোদিত এক্সেস ব্লক করে
+### 👥 Role-Based Access
+- Customizable **Admin, Manager, and User** roles
+- **Permission system** for page-level access
+- **Protected routes** to prevent unauthorized access
 
-### 📱 মোবাইল অপটিমাইজেশন
-- **টাচ-ফ্রেন্ডলি** - সব ইন্টারঅ্যাকশন মোবাইল-অপটিমাইজড
-- **রেসপন্সিভ লেআউট** - সব স্ক্রিন সাইজে পারফেক্ট
-- **ফাস্ট লোডিং** - মিনিমাল বান্ডেল সাইজ
+### 📱 Mobile Optimization
+- **Touch-friendly interactions**
+- **Responsive layout**
+- **Fast loading with minimal bundle size**
 
-## 🚀 দ্রুত শুরু করুন
+## 🚀 Quick Start
 
-### ইনস্টলেশন
+### Installation
 
-\`\`\`bash
-# ক্লোন করুন বা ডাউনলোড করুন
+```bash
+# Clone or download
 git clone <repository-url>
 cd professional-dashboard
 
-# ডিপেন্ডেন্সি ইনস্টল করুন
+# Install dependencies
 npm install
 
-# ডেভেলপমেন্ট সার্ভার চালান
+# Run development server
 npm run dev
-\`\`\`
+```
 
-### ডেমো ক্রেডেনশিয়াল
+### Demo Credentials
 
-\`\`\`
+```
 Email: demo@example.com
 Password: password123
-\`\`\`
+```
 
-## 📁 প্রজেক্ট স্ট্রাকচার
+## 📁 Project Structure
 
-\`\`\`
+```
 professional-dashboard/
 ├── app/
-│   ├── layout.tsx                 # রুট লেআউট
-│   ├── page.tsx                   # হোম পেজ (রিডিরেক্ট)
+│   ├── layout.tsx
+│   ├── page.tsx
 │   ├── login/
-│   │   └── page.tsx              # লগইন পেজ
 │   ├── forgot-password/
-│   │   └── page.tsx              # ফরগট পাসওয়ার্ড পেজ
 │   └── dashboard/
-│       ├── layout.tsx             # ড্যাশবোর্ড লেআউট
-│       ├── page.tsx               # ড্যাশবোর্ড হোম
+│       ├── layout.tsx
+│       ├── page.tsx
 │       ├── users/
-│       │   └── page.tsx           # ইউজার লিস্ট
 │       ├── analytics/
-│       │   └── page.tsx           # অ্যানালিটিক্স পেজ
 │       ├── reports/
-│       │   └── page.tsx           # রিপোর্ট পেজ
 │       ├── settings/
-│       │   └── page.tsx           # সেটিংস পেজ
 │       ├── profile/
-│       │   └── page.tsx           # প্রোফাইল পেজ
 │       └── unauthorized/
-│           └── page.tsx           # এক্সেস ডিনাইড পেজ
 ├── components/
 │   └── dashboard/
-│       ├── layout.tsx             # ড্যাশবোর্ড লেআউট কম্পোনেন্ট
-│       ├── sidebar.tsx            # সাইডবার নেভিগেশন
-│       ├── header.tsx             # হেডার কম্পোনেন্ট
-│       ├── pagination.tsx         # পেজিনেশন কম্পোনেন্ট
-│       ├── search-bar.tsx         # সার্চ বার কম্পোনেন্ট
-│       ├── data-table.tsx         # ডেটা টেবিল কম্পোনেন্ট
-│       └── protected-route.tsx    # প্রোটেক্টেড রুট কম্পোনেন্ট
+│       ├── layout.tsx
+│       ├── sidebar.tsx
+│       ├── header.tsx
+│       ├── pagination.tsx
+│       ├── search-bar.tsx
+│       ├── data-table.tsx
+│       └── protected-route.tsx
 ├── providers/
-│   └── theme-provider.tsx         # থিম প্রোভাইডার
+│   └── theme-provider.tsx
 ├── lib/
-│   └── auth.ts                    # অথেন্টিকেশন ইউটিলিটি
+│   └── auth.ts
 ├── app/
-│   └── globals.css                # গ্লোবাল স্টাইল এবং থিম
-└── README.md                      # এই ফাইল
-\`\`\`
+│   └── globals.css
+└── README.md
+```
 
-## 🎯 কোর কম্পোনেন্ট
+## 🎯 Core Components
 
-### 1. **Sidebar** (`components/dashboard/sidebar.tsx`)
-- কোলাপ্স/এক্সপান্ড ফাংশনালিটি
-- নেস্টেড মেনু সাপোর্ট
-- অ্যাক্টিভ লিংক হাইলাইটিং
-- মোবাইল ড্রয়ার মোড
+### 1. Sidebar (`components/dashboard/sidebar.tsx`)
+- Expand/Collapse functionality
+- Nested menu support
+- Active link highlighting
+- Mobile drawer mode
 
-### 2. **Header** (`components/dashboard/header.tsx`)
-- থিম সুইচার (লাইট/ডার্ক/সিস্টেম)
-- ইউজার প্রোফাইল ড্রপডাউন
-- লগআউট ফাংশনালিটি
-- মোবাইল মেনু টগল
+### 2. Header (`components/dashboard/header.tsx`)
+- Theme switcher (Light/Dark/System)
+- User profile dropdown
+- Logout option
+- Mobile menu toggle
 
-### 3. **Pagination** (`components/dashboard/pagination.tsx`)
-- URL-বেসড পেজিনেশন
-- স্মার্ট পেজ নম্বর ডিসপ্লে
-- প্রথম/শেষ পেজ জাম্প
-- রেসপন্সিভ ডিজাইন
+### 3. Pagination (`components/dashboard/pagination.tsx`)
+- URL-based pagination
+- Smart page numbers
+- First/Last page jump
+- Responsive layout
 
-### 4. **SearchBar** (`components/dashboard/search-bar.tsx`)
-- ডেবাউন্স সার্চ
-- URL প্যারামিটার সিঙ্ক
-- ক্লিয়ার বাটন
-- রিয়েল-টাইম ফিল্টারিং
+### 4. SearchBar (`components/dashboard/search-bar.tsx`)
+- Debounced searches
+- URL parameter sync
+- Clear button
+- Real-time filtering
 
-### 5. **DataTable** (`components/dashboard/data-table.tsx`)
-- জেনেরিক টাইপ সাপোর্ট
-- কাস্টম রেন্ডার ফাংশন
-- লোডিং স্টেট
-- এমপ্টি স্টেট
+### 5. DataTable (`components/dashboard/data-table.tsx`)
+- Generic type support
+- Custom render functions
+- Loading and empty states
 
-### 6. **ProtectedRoute** (`components/dashboard/protected-route.tsx`)
-- রোল-বেসড এক্সেস চেক
-- অটোমেটিক রিডিরেক্ট
-- লোডিং স্টেট
+### 6. ProtectedRoute (`components/dashboard/protected-route.tsx`)
+- Role-based access checks
+- Automatic redirects
+- Loading state
 
-## 🎨 থিম কাস্টমাইজেশন
+## 🎨 Theme Customization
 
-`app/globals.css` এ থিম ভেরিয়েবল সংজ্ঞায়িত করা আছে:
+Theme variables are defined in `app/globals.css`:
 
-\`\`\`css
+```css
 @theme inline {
   --color-primary: #3b82f6;
   --color-primary-dark: #1e40af;
   --color-primary-light: #60a5fa;
-  
+
   --color-background: var(--background);
   --color-background-secondary: #f9fafb;
   --color-foreground: var(--foreground);
-  
-  /* ডার্ক মোড */
+
+  /* Dark mode */
   --color-dark-background: #0f172a;
   --color-dark-background-secondary: #1e293b;
   --color-dark-foreground: #f1f5f9;
-  
-  /* অ্যাক্সেন্ট কালার */
+
+  /* Accent colors */
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-error: #ef4444;
 }
-\`\`\`
+```
 
-## 🔐 অথেন্টিকেশন ফ্লো
+## 🔐 Authentication Flow
 
-### লগইন
-1. ইমেইল এবং পাসওয়ার্ড এন্টার করুন
-2. ইউজার ডেটা localStorage এ সেভ হয়
-3. ড্যাশবোর্ডে রিডিরেক্ট
+### Login
+1. Enter email and password
+2. User data is stored in `localStorage`
+3. Redirected to dashboard
 
-### ফরগট পাসওয়ার্ড
-1. ইমেইল এন্টার করুন
-2. OTP পান (ডেমো: যেকোনো 6 ডিজিট)
-3. নতুন পাসওয়ার্ড সেট করুন
-4. লগইন পেজে রিডিরেক্ট
+### Forgot Password
+1. Enter email
+2. Receive OTP (demo: any 6 digits)
+3. Set new password
+4. Redirect to login
 
-## 👥 রোল-বেসড এক্সেস
+## 👥 Role-Based Access
 
 ### Admin
-- সব পেজ এক্সেস করতে পারে
-- ইউজার ম্যানেজমেন্ট
-- সেটিংস এক্সেস
+- Full access
+- User management
+- Settings
 
 ### Manager
-- ড্যাশবোর্ড, ইউজার, অ্যানালিটিক্স, রিপোর্ট দেখতে পারে
-- সেটিংস এক্সেস নেই
+- Dashboard, Users, Analytics, Reports
+- No settings access
 
 ### User
-- শুধুমাত্র ড্যাশবোর্ড দেখতে পারে
+- Dashboard only
 
-## 📱 রেসপন্সিভ ব্রেকপয়েন্ট
+## 📱 Responsive Breakpoints
 
-\`\`\`
+```
 - Mobile: < 640px
 - Tablet: 640px - 1024px
 - Desktop: > 1024px
-\`\`\`
+```
 
-## 🚀 ডিপ্লয়মেন্ট
+## 🚀 Deployment
 
-### Vercel এ ডিপ্লয় করুন
+### Deploy to Vercel
 
-\`\`\`bash
+```bash
 npm run build
 vercel deploy
-\`\`\`
+```
 
-### অন্যান্য প্ল্যাটফর্ম
+### Other platforms
 
-\`\`\`bash
+```bash
 npm run build
-# আউটপুট: .next ফোল্ডার
-\`\`\`
+# Output: .next folder
+```
 
-## 📦 ডিপেন্ডেন্সি
+## 📦 Dependencies
 
-- **Next.js 15+** - React ফ্রেমওয়ার্ক
-- **React 19+** - UI লাইব্রেরি
-- **Tailwind CSS 4** - স্টাইলিং
-- **Lucide React** - আইকন
+- **Next.js 15+**
+- **React 19+**
+- **Tailwind CSS 4**
+- **Lucide React**
 
-## 🎓 কোড কোয়ালিটি
+## 🎓 Code Quality
 
-- ✅ TypeScript সাপোর্ট
-- ✅ ESLint কনফিগার করা
-- ✅ সিমান্টিক HTML
-- ✅ ARIA অ্যাট্রিবিউট
-- ✅ পারফরম্যান্স অপটিমাইজড
+- ✅ TypeScript support
+- ✅ ESLint configured
+- ✅ Semantic HTML
+- ✅ ARIA attributes
+- ✅ Performance optimized
 
-## 🔧 কাস্টমাইজেশন গাইড
+## 🔧 Customization Guide
 
-### নতুন পেজ যোগ করুন
+### Add a New Page
 
-\`\`\`tsx
+```tsx
 // app/dashboard/new-page/page.tsx
 "use client"
 
@@ -247,61 +238,60 @@ export default function NewPage() {
     <ProtectedRoute requiredRoles={["admin"]}>
       <div className="space-y-6">
         <h1 className="text-3xl font-bold">New Page</h1>
-        {/* কন্টেন্ট এখানে */}
       </div>
     </ProtectedRoute>
   )
 }
-\`\`\`
+```
 
-### নতুন নেভিগেশন আইটেম যোগ করুন
+### Add a Navigation Item
 
-`components/dashboard/sidebar.tsx` এ `navItems` অ্যারে এডিট করুন:
+In `components/dashboard/sidebar.tsx` update `navItems`:
 
-\`\`\`tsx
+```tsx
 const navItems: NavItem[] = [
-  // ... existing items
+  // ...existing items
   {
     label: "New Page",
     href: "/dashboard/new-page",
     icon: <Icon className="w-5 h-5" />,
   },
 ]
-\`\`\`
+```
 
-### রোল পারমিশন কাস্টমাইজ করুন
+### Customize Role Permissions
 
-`lib/auth.ts` এ `rolePermissions` এডিট করুন:
+In `lib/auth.ts` edit `rolePermissions`:
 
-\`\`\`tsx
+```tsx
 export const rolePermissions: Record<UserRole, string[]> = {
   admin: ["view_dashboard", "manage_users", "new_permission"],
   manager: ["view_dashboard", "view_users"],
   user: ["view_dashboard"],
 }
-\`\`\`
+```
 
-## 🐛 ট্রাবলশুটিং
+## 🐛 Troubleshooting
 
-### লগইন পেজে স্টাক হয়েছে?
-- localStorage চেক করুন: `localStorage.getItem('user')`
-- ব্রাউজার কনসোল এ এরর দেখুন
+### Stuck on Login?
+- Check `localStorage`: `localStorage.getItem('user')`
+- Inspect browser console errors
 
-### থিম পরিবর্তন হচ্ছে না?
-- localStorage থেকে থিম চেক করুন: `localStorage.getItem('theme')`
-- ব্রাউজার রিফ্রেশ করুন
+### Theme Not Updating?
+- Check `localStorage.getItem('theme')`
+- Refresh browser
 
-### পেজিনেশন কাজ করছে না?
-- URL প্যারামিটার চেক করুন: `?page=1&search=query`
-- ডেটা লেন্থ চেক করুন
+### Pagination Issues?
+- Confirm URL params: `?page=1&search=query`
+- Verify dataset length
 
-## 📝 লাইসেন্স
+## 📝 License
 
-এই প্রজেক্ট ওপেন সোর্স এবং ফ্রি ব্যবহারের জন্য উপলব্ধ।
+This project is open-source and free to use.
 
-## 🤝 কন্ট্রিবিউশন
+## 🤝 Contribution
 
-উন্নতির জন্য সাজেশন এবং পুল রিকোয়েস্ট স্বাগত জানাই।
+Suggestions and pull requests are welcome.
 
 ---
 
